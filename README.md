@@ -1,354 +1,127 @@
-Contribution: 2020-08-08 20:00
 
-Contribution: 2020-08-08 20:01
+# Solana dApp Scaffold Next
 
-Contribution: 2020-08-19 20:00
+The Solana dApp Scaffold repos are meant to house good starting scaffolds for ecosystem developers to get up and running quickly with a front end client UI that integrates several common features found in dApps with some basic usage examples. Wallet Integration. State management. Components examples. Notifications. Setup recommendations.
 
-Contribution: 2020-08-19 20:01
+Responsive                     |  Desktop
+:-------------------------:|:-------------------------:
+![](scaffold-mobile.png)  |  ![](scaffold-desktop.png)
 
-Contribution: 2020-08-19 20:02
+## Getting Started
 
-Contribution: 2020-08-19 20:03
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Contribution: 2020-08-19 20:04
+The responsive version for wallets and wallet adapter may not function or work as expected for mobile based on plugin and wallet compatibility. For more code examples and implementations please visit the [Solana Cookbook](https://solanacookbook.com/)
 
-Contribution: 2020-08-19 20:05
+## Installation
 
-Contribution: 2020-08-30 20:00
+```bash
+npm install
+# or
+yarn install
+```
 
-Contribution: 2020-08-30 20:01
+## Build and Run
 
-Contribution: 2020-08-30 20:02
+Next, run the development server:
 
-Contribution: 2020-08-30 20:03
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Contribution: 2020-08-30 20:04
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Contribution: 2020-08-30 20:05
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Contribution: 2020-08-30 20:06
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Contribution: 2020-11-03 20:00
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Contribution: 2020-11-03 20:01
+## Features
 
-Contribution: 2020-12-31 20:00
+Each Scaffold will contain at least the following features:
 
-Contribution: 2021-01-05 20:00
+```
+Wallet Integration with Auto Connec / Refresh
 
-Contribution: 2021-01-05 20:01
+State Management
 
-Contribution: 2021-01-05 20:02
+Components: One or more components demonstrating state management
 
-Contribution: 2021-01-05 20:03
+Web3 Js: Examples of one or more uses of web3 js including a transaction with a connection provider
 
-Contribution: 2021-01-05 20:04
+Sample navigation and page changing to demonstate state
 
-Contribution: 2021-01-05 20:05
+Clean Simple Styling 
 
-Contribution: 2021-01-28 20:00
+Notifications (optional): Example of using a notification system
 
-Contribution: 2021-01-28 20:01
+```
 
-Contribution: 2021-02-06 20:00
+A Solana Components Repo will be released in the near future to house a common components library.
 
-Contribution: 2021-02-06 20:01
 
-Contribution: 2021-02-06 20:02
+### Structure
 
-Contribution: 2021-02-06 20:03
+The scaffold project structure may vary based on the front end framework being utilized. The below is an example structure for the Next js Scaffold.
+ 
+```
+├── public : publically hosted files
+├── src : primary code folders and files 
+│   ├── components : should house anything considered a resuable UI component
+│   ├── contexts` : any context considered reusable and useuful to many compoennts that can be passed down through a component tree
+│   ├── hooks` : any functions that let you 'hook' into react state or lifecycle features from function components
+│   ├── models` : any data structure that may be reused throughout the project
+│   ├── pages` : the pages that host meta data and the intended `View` for the page
+│   ├── stores` : stores used in state management
+│   ├── styles` : contain any global and reusable styles
+│   ├── utils` : any other functionality considered reusable code that can be referenced
+│   ├── views` : contains the actual views of the project that include the main content and components within
+style, package, configuration, and other project files
 
-Contribution: 2021-02-06 20:04
+```
 
-Contribution: 2021-02-06 20:05
+## Contributing
 
-Contribution: 2021-03-16 20:00
+Anyone is welcome to create an issue to build, discuss or request a new feature or update to the existing code base. Please keep in mind the following when submitting an issue. We consider merging high value features that may be utilized by the majority of scaffold users. If this is not a common feature or fix, consider adding it to the component library or cookbook. Please refer to the project's architecture and style when contributing. 
 
-Contribution: 2021-03-16 20:01
+If submitting a feature, please reference the project structure shown above and try to follow the overall architecture and style presented in the existing scaffold.
 
-Contribution: 2021-04-04 20:00
+### Committing
 
-Contribution: 2021-04-04 20:01
+To choose a task or make your own, do the following:
 
-Contribution: 2021-04-21 20:00
+1. [Add an issue](https://github.com/solana-dev-adv/solana-dapp-next/issues/new) for the task and assign it to yourself or comment on the issue
+2. Make a draft PR referencing the issue.
 
-Contribution: 2021-04-21 20:01
+The general flow for making a contribution:
 
-Contribution: 2021-04-21 20:02
+1. Fork the repo on GitHub
+2. Clone the project to your own machine
+3. Commit changes to your own branch
+4. Push your work back up to your fork
+5. Submit a Pull request so that we can review your changes
 
-Contribution: 2021-05-21 20:00
+**NOTE**: Be sure to merge the latest from "upstream" before making a 
+pull request!
 
-Contribution: 2021-05-21 20:01
+You can find tasks on the [project board](https://github.com/solana-dev-adv/solana-dapp-next/projects/1) 
+or create an issue and assign it to yourself.
 
-Contribution: 2021-05-21 20:02
 
-Contribution: 2021-06-12 20:00
+## Learn More Next Js
 
-Contribution: 2021-06-12 20:01
+To learn more about Next.js, take a look at the following resources:
 
-Contribution: 2021-06-12 20:02
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Contribution: 2021-06-12 20:03
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Contribution: 2021-06-12 20:04
+## Deploy on Vercel
 
-Contribution: 2021-06-12 20:05
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Contribution: 2021-06-16 20:00
-
-Contribution: 2021-06-18 20:00
-
-Contribution: 2021-06-18 20:01
-
-Contribution: 2021-07-12 20:00
-
-Contribution: 2021-07-12 20:01
-
-Contribution: 2021-07-12 20:02
-
-Contribution: 2021-08-14 20:00
-
-Contribution: 2021-08-14 20:01
-
-Contribution: 2021-08-14 20:02
-
-Contribution: 2021-10-18 20:00
-
-Contribution: 2021-10-18 20:01
-
-Contribution: 2021-10-18 20:02
-
-Contribution: 2021-11-22 20:00
-
-Contribution: 2021-11-22 20:01
-
-Contribution: 2021-11-22 20:02
-
-Contribution: 2021-11-22 20:03
-
-Contribution: 2021-11-22 20:04
-
-Contribution: 2021-11-22 20:05
-
-Contribution: 2021-11-22 20:06
-
-Contribution: 2021-12-10 20:00
-
-Contribution: 2021-12-10 20:01
-
-Contribution: 2021-12-10 20:02
-
-Contribution: 2021-12-10 20:03
-
-Contribution: 2021-12-10 20:04
-
-Contribution: 2021-12-29 20:00
-
-Contribution: 2021-12-29 20:01
-
-Contribution: 2021-12-29 20:02
-
-Contribution: 2021-12-29 20:03
-
-Contribution: 2022-01-14 20:00
-
-Contribution: 2022-01-14 20:01
-
-Contribution: 2022-01-14 20:02
-
-Contribution: 2022-01-14 20:03
-
-Contribution: 2022-01-14 20:04
-
-Contribution: 2022-01-14 20:05
-
-Contribution: 2022-01-14 20:06
-
-Contribution: 2022-01-21 20:00
-
-Contribution: 2022-01-21 20:01
-
-Contribution: 2022-01-21 20:02
-
-Contribution: 2022-01-21 20:03
-
-Contribution: 2022-01-21 20:04
-
-Contribution: 2022-02-21 20:00
-
-Contribution: 2022-02-21 20:01
-
-Contribution: 2022-02-21 20:02
-
-Contribution: 2022-02-21 20:03
-
-Contribution: 2022-02-21 20:04
-
-Contribution: 2022-02-21 20:05
-
-Contribution: 2022-03-06 20:00
-
-Contribution: 2022-03-06 20:01
-
-Contribution: 2022-03-06 20:02
-
-Contribution: 2022-03-06 20:03
-
-Contribution: 2022-03-06 20:04
-
-Contribution: 2022-03-06 20:05
-
-Contribution: 2022-03-23 20:00
-
-Contribution: 2022-03-23 20:01
-
-Contribution: 2022-03-23 20:02
-
-Contribution: 2022-03-23 20:03
-
-Contribution: 2022-03-23 20:04
-
-Contribution: 2022-03-23 20:05
-
-Contribution: 2022-03-24 20:00
-
-Contribution: 2022-03-24 20:01
-
-Contribution: 2022-03-24 20:02
-
-Contribution: 2022-03-24 20:03
-
-Contribution: 2022-03-24 20:04
-
-Contribution: 2022-04-09 20:00
-
-Contribution: 2022-04-09 20:01
-
-Contribution: 2022-04-09 20:02
-
-Contribution: 2022-04-09 20:03
-
-Contribution: 2022-04-09 20:04
-
-Contribution: 2022-04-09 20:05
-
-Contribution: 2022-04-13 20:00
-
-Contribution: 2022-04-13 20:01
-
-Contribution: 2022-04-13 20:02
-
-Contribution: 2022-04-13 20:03
-
-Contribution: 2022-04-13 20:04
-
-Contribution: 2022-04-13 20:05
-
-Contribution: 2022-04-13 20:06
-
-Contribution: 2022-06-19 20:00
-
-Contribution: 2022-06-19 20:01
-
-Contribution: 2022-07-07 20:00
-
-Contribution: 2022-07-07 20:01
-
-Contribution: 2022-07-07 20:02
-
-Contribution: 2022-07-11 20:00
-
-Contribution: 2022-07-11 20:01
-
-Contribution: 2022-07-11 20:02
-
-Contribution: 2022-07-11 20:03
-
-Contribution: 2022-07-11 20:04
-
-Contribution: 2022-07-11 20:05
-
-Contribution: 2022-08-09 20:00
-
-Contribution: 2022-08-09 20:01
-
-Contribution: 2022-08-09 20:02
-
-Contribution: 2022-08-09 20:03
-
-Contribution: 2022-08-09 20:04
-
-Contribution: 2022-08-09 20:05
-
-Contribution: 2022-08-09 20:06
-
-Contribution: 2022-09-25 20:00
-
-Contribution: 2022-09-25 20:01
-
-Contribution: 2022-09-25 20:02
-
-Contribution: 2022-09-25 20:03
-
-Contribution: 2022-09-25 20:04
-
-Contribution: 2022-10-24 20:00
-
-Contribution: 2022-12-26 20:00
-
-Contribution: 2022-12-26 20:01
-
-Contribution: 2022-12-26 20:02
-
-Contribution: 2023-01-07 20:00
-
-Contribution: 2023-01-07 20:01
-
-Contribution: 2023-01-07 20:02
-
-Contribution: 2023-01-07 20:03
-
-Contribution: 2023-01-07 20:04
-
-Contribution: 2023-01-07 20:05
-
-Contribution: 2023-02-02 20:00
-
-Contribution: 2023-02-02 20:01
-
-Contribution: 2023-02-02 20:02
-
-Contribution: 2023-02-02 20:03
-
-Contribution: 2023-02-02 20:04
-
-Contribution: 2023-02-02 20:05
-
-Contribution: 2023-02-06 20:00
-
-Contribution: 2023-02-06 20:01
-
-Contribution: 2023-02-06 20:02
-
-Contribution: 2023-02-13 20:00
-
-Contribution: 2023-02-13 20:01
-
-Contribution: 2023-02-13 20:02
-
-Contribution: 2023-02-13 20:03
-
-Contribution: 2023-02-27 20:00
-
-Contribution: 2023-02-27 20:01
-
-Contribution: 2023-02-27 20:02
-
-Contribution: 2023-02-27 20:03
-
-Contribution: 2023-02-27 20:04
-
-Contribution: 2023-02-27 20:05
-
-Contribution: 2023-03-05 20:00
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
